@@ -73,13 +73,22 @@ function animatePress(currentColor) {
 }
 
 // to start the game in the first place
-$(document).keypress(function (event) {
+$(document).keypress(function () {
 
         if (!started) {
             nextSequence();
             started = true;
         }
 
+});
+
+$("#level-title").click(function() {
+
+    if (!started) {
+        nextSequence();
+        started = true;
+    }
+    
 });
 
 // to check the user answers vs the game pattern
