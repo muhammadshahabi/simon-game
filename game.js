@@ -75,15 +75,10 @@ function animatePress(currentColor) {
 // to start the game in the first place
 $(document).keypress(function (event) {
 
-    if (event.key === "a") {
-
         if (!started) {
             nextSequence();
             started = true;
         }
-
-    }
-
 
 });
 
